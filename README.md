@@ -1,10 +1,8 @@
-# Twitter UI clone project
+# Instagram UI clone project
 
 
-simple twitter UI colning project 
+simple Instagram UI cloning project 
 
-
-##[Go to live](https://sajith-dilshan.github.io/Twitter-UI-clone-project/)
 
 
 

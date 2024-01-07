@@ -1,0 +1,23 @@
+.dropdown-item:hover{
+  background: linear-gradient(45deg, black, darkslategrey);
+  color: white !important;
+  box-shadow: 0 0 5px black;
+}
+.bg-teal, .btn-teal{
+  background-color: #2a6f6f !important;
+}
+.text-teal{
+  color: #2a6f6f;
+}
+.bg-primary, .btn-primary{
+  background: linear-gradient(45deg, darkslategrey, cornflowerblue);
+}
+.bg-success, .btn-success{
+  background: linear-gradient(45deg, darkslategrey, limegreen);
+}
+.bg-warning, .btn-warning{
+  background: linear-gradient(45deg, darkslategrey, coral);
+}
+.bg-danger, .btn-danger{
+  background: linear-gradient(45deg, darkslategrey, red);
+}

@@ -1,0 +1,76 @@
+body {
+  background: rgba(0, 0, 0, 0.979);
+}
+.box_upload {
+  display: flex;
+  justify-content: center;
+}
+.outline {
+  border: 1px solid rgba(255, 255, 255, 0.411);
+  border-radius: 5px;
+  width: 20rem;
+  height: 20rem;
+}
+.upload_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  padding: 5rem;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.356);
+  box-shadow: 1px 5px 8px rgba(15, 15, 15, 0.192);
+}
+input,
+button {
+  padding: 0.85rem;
+  background: #1d9bf0;
+  color: white;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  margin: 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 700;
+}
+button:hover {
+  background: rgba(255, 255, 255, 0.692);
+}
+hr {
+  display: flex;
+}
+.image {
+  width: 350px;
+  border-radius: 10px;
+}
+.each_img {
+  background: rgba(0, 0, 0, 0.877);
+  border-radius: 20px;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+}
+.back {
+  padding: 0.85rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}

@@ -1,0 +1,463 @@
+/* Copyright © 2022 sajith-dilshan. All Rights Reserved.
+ * This project is licensed under the MIT License.
+ * Please find the license file in the root directory.
+ *
+ * style.css
+ *
+ * Author: sajith dilshan <sajithd784@gmail.com>
+ */
+
+@font-face {
+  font-family: 'TwitterChirp';
+  src: url('../fonts/chirp-regular-web.woff') format('woff2'),
+    url('../fonts/chirp-bold-web.woff') format('woff'),
+    url('../fonts/chirp-heavy-web.woff') format('woff');
+}
+
+html {
+  font-family: TwitterChirp, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --verified-theme-color: #1d9bf0;
+  --instagram-theme-color:rgb(255, 0, 119);
+  --twitter-background-color: #000000;
+}
+
+.nav_logo {
+  width: 50px;
+  height: 30px;
+  color: var(--instagram-theme-color);
+  fill: currentColor;
+}
+
+.Menu_options {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Menu_options .material-icons {
+  padding: 20px;
+}
+
+.Menu_options h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.Menu_options:hover {
+  background-color: var(--twitter-background-color);
+  border-radius: 10px;
+  color: var(--instagram-theme-color);
+}
+
+.tweet_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.75rem;
+  background-color: var(--instagram-theme-color);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 30px;
+  height: 50px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  background-color: var(--twitter-background-color);
+}
+
+nav {
+  flex: 0.2;
+  height: 100vh;
+  border-right: 1px solid rgba(255, 255, 255, 0.322);
+  min-width: 350px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+.logo {
+  width: 54%;
+}
+
+/* == menu section */
+.Menu_options {
+  margin: 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+.Menu_options:hover {
+  background: rgba(124, 123, 123, 0.192);
+  transition: all 0.2s ease-in-out;
+}
+.Menu_options h2 {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+main {
+  /* flex: 0.5; */
+  border-right: 1px solid var(--twitter-background-color);
+  min-width: fit-content;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 0 auto;
+}
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle_body {
+  margin: 0 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to right, purple, red);
+  border-radius: 50%;
+  margin: 10px;
+}
+.circle_inner {
+  width: 73px;
+  height: 73px;
+  background: black;
+  border-radius: 50%;
+}
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: 10;
+  border: 1px solid var(--twitter-background-color);
+  padding: 15px 20px;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.header h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.tweet_box-input img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweet_box {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background-color);
+  padding-right: 10px;
+}
+
+.tweet_box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet_box-input {
+  display: flex;
+  padding: 20px;
+}
+
+.tweet_box-input input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.144);
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  border-radius: 30px;
+}
+
+.tweet_box-input button {
+  background-color: var(--instagram-theme-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+.post_profile-image img {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.post {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background-color);
+  padding-bottom: 10px;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 50px;
+}
+.likes {
+  font-size: 18px !important;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.comments {
+  font-size: 23px !important;
+  color: rgba(255, 255, 255, 0.486);
+}
+.post_body img {
+  width: 550px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  height: 650px;
+}
+
+.post_footer {
+  display: flex;
+  margin-top: 10px;
+}
+.post_footer span {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+.post_badge {
+  font-size: 14px !important;
+  color: var(--verified-theme-color);
+  margin-right: 5px;
+}
+
+.header-icon-section {
+  font-weight: 600;
+  font-size: 12px;
+  color: grey;
+}
+.post_header-text h3 {
+  font-size: 1.42rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.post_header-discription p {
+  font-size: 1.2rem;
+  line-height: 25px;
+  margin-bottom: 10px;
+  max-width: 550px;
+}
+
+.post_body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.post_profile-image {
+  /* padding: 20px; */
+  /* height: 50px;
+  margin-left: 20px; */
+}
+.post_profile-image img{
+  width: 50px !important;
+  height: 50px !important;
+}
+/* == aside  */
+
+aside {
+  flex: 0.3;
+  padding: 2rem;
+}
+
+.aside_input {
+  display: flex;
+  flex-direction: column;
+  background-color: #16181c;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.subscribe_btn {
+  padding: 0.9rem;
+  background-color: var(--instagram-theme-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  width: 10rem;
+  margin: 0 1rem;
+}
+.aside_input h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 0 1rem;
+}
+.aside_input p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 1rem;
+}
+
+.aside_search-icon {
+  color: gray;
+}
+.trends_item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1.1rem;
+}
+.trends_item:hover {
+  background: #1d1f23;
+}
+.trends_item h3 {
+  font-size: 1.2rem;
+  color: #67696e;
+  margin: 0.5rem 0;
+}
+.trends_item h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.trends_item h5 {
+  font-size: 1.2rem;
+  color: #67696e;
+  margin: 0.5rem 0;
+}
+
+.aside_container {
+  margin-top: 1rem;
+  /* padding: 20px; */
+  background-color: #16181c;
+  border-radius: 20px;
+}
+
+.aside_container h2 {
+  font-size: 1.7rem;
+  font-weight: 1000;
+  padding: 1.2rem;
+}
+.logout {
+  color: rgba(255, 255, 255, 0.616);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-top: 50px;
+}
+.logout h2:hover {
+  color: #919191;
+}
+
+/*sign-in.php*/
+.sign-in__form {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--twitter-background-color);
+}
+.sign-in__form form {
+  box-shadow: 29px 29px 45px #1c1c1c, -29px -29px 45px #262626;
+  padding: 10rem 7rem;
+  border-radius: 20px;
+}
+
+form .form-control {
+  padding: 0.75rem;
+  border: 2px solid transparent;
+  outline: none;
+  min-width: 350px;
+  background: none;
+  border-radius: 5px;
+  border-bottom: 2px solid white;
+  margin-top: 1rem;
+}
+form .form-control:focus {
+  border: 2px solid white;
+}
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 1.5rem;
+}
+.mb-3 {
+  margin-bottom: 2.5rem;
+}
+.btn-sign-in {
+  padding: 0.8rem 1.2rem;
+  background: white;
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  color: black;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+.btn-sign-in:hover {
+  background: rgba(255, 255, 255, 0.719);
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.twitter-text {
+  color: var(--instagram-theme-color);
+}
+form label {
+  color: var(--instagram-theme-color);
+}
+.form-check-label {
+  color: white;
+}
+.form-check-input:checked {
+  padding: 12px;
+  color: black;
+}
+.sign-up__form {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--twitter-background-color);
+}
+.sign-up__form form {
+  padding: 5rem;
+  box-shadow: 29px 29px 45px #1c1c1c, -29px -29px 45px #262626;
+  border-radius: 20px;
+}
